@@ -413,7 +413,7 @@ plot_letter_label=function(x_min,x_max,y_min,y_max,letter){
 # PDF = 210x297 - margins are 35,20,20,20 mm 
 # PDF = 8.3x11.7 - margins are 1.38,0.79,0.79,0.79 inches
 
-pdf(paste(output_directory,"/Chapter2_FUS_AOO_Reanalysis_Results.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)/4)
+pdf(paste(output_directory,"/Chapter4_FUS_AOO_Reanalysis_Results.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)/4)
 #par(mfrow=c(1,2), mar = c(3,3,1.5,1.5),mgp=c(0.2,0.1,0),las=0)
 par(mfrow=c(1,2),mar=c(3,3,1.5,1))
 # FUS:c.1512_1513delAG(p.[G505fs])
@@ -555,7 +555,7 @@ SAM_countries <- unique(population_studies$Country[population_studies$Continent=
 # Create Plot
 #####
 
-pdf(paste(output_directory,"/Chapter2_Proportion_of_Cases_Explained_Results.pdf"),height=11.7,width=(8.3),onefile=T)
+pdf(paste(output_directory,"/Chapter4_Proportion_of_Cases_Explained_Results.pdf"),height=11.7,width=(8.3),onefile=T)
 
 for (filter in list("Cuba",NAM_countries,SAM_countries)){
 
@@ -1039,7 +1039,7 @@ for (i in 1:nrow(binom_df3)){
 ################################################################################
 
 
-pdf("path/to/Chapter2_AAF_EPACTs_Oligogenic_Results.pdf",width=(8.3-1.38-0.8),height=(11.7-0.8-0.8))
+pdf("path/to/Chapter4_AAF_EPACTs_Oligogenic_Results.pdf",width=(8.3-1.38-0.8),height=(11.7-0.8-0.8))
 layout(matrix(c(1,4,4,6,1,4,4,6,2,4,4,7,2,5,5,7,3,5,5,8,3,5,5,8), nrow=4,byrow = FALSE))
 par(mar=c(3.2,3.2,2,1))
 
@@ -1486,7 +1486,7 @@ calculate_atxn2_or(tredparse.hipstr,"hip.allele",27)
 # PDF = 210x297 - margins are 35,20,20,20 mm 
 # PDF = 8.3x11.7 - margins are 1.38,0.79,0.79,0.79 inches
 
-pdf(paste(output_directory,"/Chapter2_ATXN2_Results.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)*2/5)
+pdf(paste(output_directory,"/Chapter4_ATXN2_Results.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)*2/5)
 par(mar=c(4,4,3,1))
 layout(matrix(c(1,1,2,2,3,3,4,4,4,5,5,5), nrow=2,byrow = TRUE))
 rmsd_create_plot(rmsd_df,"A")
@@ -1512,7 +1512,7 @@ pedi <- pedigree(ID, Father, Mother, Sex.1.Male.2.Female., AffectionStatus.NA.Un
 # Tell it how to print (want NAs to print blank)
 strid=gsub("NA","",paste(AgeOrAgeOfOnset_.NA.Unknown.,Duration.months.,Genotype.1.0.heterozygous.1.1.homozygous.....ungenotyped.,Genotype2,Genotype3, sep="\n"))
 # Call PDF 
-pdf(paste(output_directory,"/Chapter2_2302_Pedigree.pdf"),width=(11.7-0.8-0.8),height=(8.3-1.38-0.8)*4/5)
+pdf(paste(output_directory,"/Chapter4_2302_Pedigree.pdf"),width=(11.7-0.8-0.8),height=(8.3-1.38-0.8)*4/5)
 par(mar=c(0,0,0,0))
 plot(pedi, id=strid, cex=0.5, symbolsize=1, branch=0.8, density = c(-1, 35, 55, 25), packed=F)
 dev.off()
@@ -1579,7 +1579,7 @@ blank_plot2=function(x_min,x_max,y_min,y_max){
 		bty='n'
 	)
 }
-pdf(paste(output_directory,"/Chapter2_VQSR_Filtering.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)*2/5)
+pdf(paste(output_directory,"/Chapter4_VQSR_Filtering.pdf"),width=(8.3-1.38-0.8),height=(11.7-0.8-0.8)*2/5)
 #par(mfrow=c(1,2), mar = c(3,3,1.5,1.5),mgp=c(0.2,0.1,0),las=0)
 par(mfrow=c(2,3),mar=c(3.5,3.5,2,1))
 call_VQSR_plot(MQ.QD,40,80,0,40,"QD","A")
