@@ -1,6 +1,9 @@
+################################################################################
+################################################################################
 # Chapter 3 Create analysis plots and output useful statistics
 # This a script to create all plots and analyses for chapter 3 of my thesis
 # The script requires reading in parsed results files from in silico genotyping tools, see 'Read in Data'
+# email: dohertm7@tcd.ie
 ################################################################################
 ################################################################################
 
