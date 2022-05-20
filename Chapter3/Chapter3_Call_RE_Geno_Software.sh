@@ -1,6 +1,8 @@
+##########################################
+##########################################
 # Thesis Chapter 3 
 # Commands for Running Repeat Expansion Tools
-
+# email: dohertm7@tcd.ie
 
 ##########################################
 # Set Working Directory
