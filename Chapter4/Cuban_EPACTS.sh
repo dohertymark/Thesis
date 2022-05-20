@@ -76,3 +76,6 @@ $epacts group --vcf ${project}.chr_rem.vcf.gz --ped sample.ped --max-maf 0.05 --
 # Collapse to list of variant present grouped in each gene
 $epacts make-group --vcf ${project}.chr_rem.sites.anno.vcf.gz --out ${project}.chr_rem.sites.anno.LOF.grp -format epacts --type StructuralVariation  --type Stop_Gain  --type Stop_Loss  --type Start_Gain  --type Start_Loss  --type Frameshift  --type CodonGain  --type CodonLoss  --type CodonRegion  --type Insertion  --type Deletion  --type Essential_Splice_Site  --type Nonsense  -pass
 $epacts group --vcf ${project}.chr_rem.vcf.gz --ped sample.ped --max-maf 0.05 --groupf ${project}.chr_rem.sites.anno.LOF.grp --pheno DISEASE --test skat --out results.geno.LOF.skat --skat-o --run 5
+###########################################################################################################
+###########################################################################################################
+exit 0
